@@ -43,19 +43,13 @@ console.log(b + ' has character count of ' + b.length);
  * IT HAS NOTHING TO DO WITH THE MAP AS KEY VALUE PAIR)
  * SEE MAP METHOD AS TRANSFORMER 
  */
-
-
-// arrays.forEach( arrow function with 1 param to process stuff dont return value)
-// arrays.map( arrow function with 1 param and return new value so it can transform into new array)
-// arrays.filter( arrow function with 1 param and return true false so it can filter based on this and return new array)
-
-
-let charCountArray = names.map(  (each) => each.length     )
+let charCountArray = names.map(  each => each.length  )
 
 console.log(charCountArray);
 
-let uppercaseNames=names.map(each=>each.toUpperCase())
-console.log(uppercaseNames);
+let upperNames = names.map(each => each.toUpperCase()) 
+console.log(upperNames);
+
 
 // filter method of array expect you to provide a function 
 // that accept 1 param and return boolean value 
